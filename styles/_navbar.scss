@@ -1,35 +1,95 @@
 
 
-@media (min-width: 200px){
-    .navigation {
-        background-color: yellow;
-        height: 150px;
+@media (max-width: 600px){
+
+    nav {
+
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            background-color: yellow;
+            height: 150px;
+            overflow-y: scroll;
+
+            ul {
+                left: 0;
+                list-style-type: none;
+                padding-left: 0;
+
+                li {                    
+                    width:250px;
+                    border-top: solid black 1px;
+                    margin: 0;
+                    padding: 20px 0 20px 0;
+
+                    a {                         
+                        
+                        color: black;
+                        padding-left: 30px;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                    }
+
+                }
+
+                li:hover {
+                    background-color: white ;
+                }
+
+            }
+        }
     }
+    
 }
 
 @media (min-width: 600px){
     nav {
-        background-color: red;
+        border-right: solid lightgrey 3px;
+        background-color: rgb(230,230,230);  
         position :fixed;
-        .navigation {   
-            background-color: red;     
+        overflow-y: auto;
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation {    
             height: 100vh;
             width: 250px;
+
+            ul {
+                left: 0;
+                list-style-type: none;
+                padding-left: 0;
+
+                li {                    
+                    width:250px;
+                    border-top: solid black 1px;
+                    margin: 0;
+                    padding: 20px 0 20px 0;
+
+                    a {                         
+                        
+                        color: black;
+                        padding-left: 30px;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                    }
+
+                }
+
+                li:hover {
+                    background-color: white; 
+                }
+
+            }
+
         }
     }
 }
 
-.navigation {
-    overflow-y: scroll;
-}
 
-nav {
-    header {
-        
-        vertical-align: middle;
-        h1 {
-            height: 10px;
-            
-        }
-    }
-}
+

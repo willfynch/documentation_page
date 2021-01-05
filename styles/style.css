@@ -34,44 +34,106 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
+p, ul {
   margin: 10px 0 10px 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .code {
   background-color: lightgray;
+  margin: 10px 0 10px 0;
   padding: 10px;
 }
 
-@media (min-width: 200px) {
-  .navigation {
+ul {
+  padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+  nav .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: yellow;
     height: 150px;
+    overflow-y: scroll;
+  }
+  nav .navigation ul {
+    left: 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  nav .navigation ul li {
+    width: 250px;
+    border-top: solid black 1px;
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+  nav .navigation ul li a {
+    color: black;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  nav .navigation ul li:hover {
+    background-color: white;
   }
 }
 
 @media (min-width: 600px) {
   nav {
-    background-color: red;
+    border-right: solid lightgrey 3px;
+    background-color: #e6e6e6;
     position: fixed;
+    overflow-y: auto;
+  }
+  nav header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   nav .navigation {
-    background-color: red;
     height: 100vh;
     width: 250px;
   }
-}
-
-.navigation {
-  overflow-y: scroll;
-}
-
-nav header {
-  vertical-align: middle;
-}
-
-nav header h1 {
-  height: 10px;
+  nav .navigation ul {
+    left: 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  nav .navigation ul li {
+    width: 250px;
+    border-top: solid black 1px;
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+  nav .navigation ul li a {
+    color: black;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  nav .navigation ul li:hover {
+    background-color: white;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,12 +29,17 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
+p, ul {
     margin: 10px 0 10px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .code {
     background-color: rgb(211, 211, 211);
+    margin: 10px 0 10px 0;
     padding: 10px;
+}
+
+ul {
+    padding-left: 40px;
 }
