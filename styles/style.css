@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (min-width: 200px) {
+  main {
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    position: absolute;
+    left: 270px;
+    padding-right: 40px;
+  }
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+  font-size: 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin: 15px 0 15px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  margin: 10px 0 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.code {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+@media (min-width: 200px) {
+  .navigation {
+    background-color: yellow;
+    height: 150px;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    background-color: red;
+    position: fixed;
+  }
+  nav .navigation {
+    background-color: red;
+    height: 100vh;
+    width: 250px;
+  }
+}
+
+.navigation {
+  overflow-y: scroll;
+}
+
+nav header {
+  vertical-align: middle;
+}
+
+nav header h1 {
+  height: 10px;
+}
+/*# sourceMappingURL=style.css.map */

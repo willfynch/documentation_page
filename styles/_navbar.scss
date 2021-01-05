@@ -1,0 +1,35 @@
+
+
+@media (min-width: 200px){
+    .navigation {
+        background-color: yellow;
+        height: 150px;
+    }
+}
+
+@media (min-width: 600px){
+    nav {
+        background-color: red;
+        position :fixed;
+        .navigation {   
+            background-color: red;     
+            height: 100vh;
+            width: 250px;
+        }
+    }
+}
+
+.navigation {
+    overflow-y: scroll;
+}
+
+nav {
+    header {
+        
+        vertical-align: middle;
+        h1 {
+            height: 10px;
+            
+        }
+    }
+}
