@@ -41,7 +41,7 @@ p, ul {
 
 .code {
   background-color: lightgray;
-  margin: 10px 0 10px 0;
+  margin: 10px 18px 10px 0;
   padding: 10px;
 }
 
@@ -50,51 +50,8 @@ ul {
 }
 
 @media (max-width: 600px) {
-  nav .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: yellow;
-    height: 150px;
-    overflow-y: scroll;
-  }
-  nav .navigation ul {
-    left: 0;
-    list-style-type: none;
-    padding-left: 0;
-  }
-  nav .navigation ul li {
-    width: 250px;
-    border-top: solid black 1px;
-    margin: 0;
-    padding: 20px 0 20px 0;
-  }
-  nav .navigation ul li a {
-    color: black;
-    padding-left: 30px;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  nav .navigation ul li:hover {
-    background-color: white;
-  }
-}
-
-@media (min-width: 600px) {
   nav {
-    border-right: solid lightgrey 3px;
     background-color: #e6e6e6;
-    position: fixed;
-    overflow-y: auto;
   }
   nav header {
     display: -webkit-box;
@@ -112,8 +69,56 @@ ul {
             justify-content: center;
   }
   nav .navigation {
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  nav .navigation ul {
+    left: 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  nav .navigation ul li {
+    width: 100vw;
+    border-top: solid black 1px;
+    margin: 0;
+    padding: 10px 0 10px 40px;
+  }
+  nav .navigation ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  nav .navigation ul li:hover {
+    background-color: white;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
     height: 100vh;
+    border-right: solid lightgrey 3px;
+    background-color: #e6e6e6;
+    position: fixed;
+  }
+  nav header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .navigation {
     width: 250px;
+    overflow-y: scroll;
   }
   nav .navigation ul {
     left: 0;

@@ -3,35 +3,34 @@
 @media (max-width: 600px){
 
     nav {
-
-        .navigation {
+        background-color: rgb(230,230,230);
+        header {
             display: flex;
             flex-direction: column;
-            flex-wrap: nowrap;
+            align-items: center;
             justify-content: center;
-            background-color: yellow;
+        }
+        .navigation {
             height: 150px;
             overflow-y: scroll;
+            overflow-x: hidden;
 
             ul {
                 left: 0;
                 list-style-type: none;
                 padding-left: 0;
 
-                li {                    
-                    width:250px;
+                li {
+                    width:100vw;
                     border-top: solid black 1px;
                     margin: 0;
-                    padding: 20px 0 20px 0;
+                    padding: 10px 0 10px 40px;
 
                     a {                         
-                        
                         color: black;
-                        padding-left: 30px;
                         text-decoration: none;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
-
                 }
 
                 li:hover {
@@ -46,19 +45,21 @@
 
 @media (min-width: 600px){
     nav {
+        height: 100vh;
         border-right: solid lightgrey 3px;
         background-color: rgb(230,230,230);  
         position :fixed;
-        overflow-y: auto;
+        
         header {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
+
         .navigation {    
-            height: 100vh;
             width: 250px;
+            overflow-y: scroll;
 
             ul {
                 left: 0;
@@ -72,7 +73,6 @@
                     padding: 20px 0 20px 0;
 
                     a {                         
-                        
                         color: black;
                         padding-left: 30px;
                         text-decoration: none;
