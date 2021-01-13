@@ -3,6 +3,37 @@
     padding: 0px;
     margin: 0px;
     
+    
+}
+
+
+@media (min-width: 600px) {
+    #bg {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
+        background-image: url(../pics/techno.jpg);
+        background-size: cover;
+        background-color: #f8872b;
+        opacity: 0.5;
+        background-blend-mode: soft-light ;
+        
+        z-index: -999;
+    }
+/*
+    #bg2 {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 65%, 100% 35%, 100% 100%, 0% 100%);
+        background-image: url(../pics/techno.jpg);
+        background-size: cover;
+        background-color: #f8872b;
+        opacity: 0.5;
+        background-blend-mode: soft-light ;
+        z-index: -999;
+    } */
 }
 
 

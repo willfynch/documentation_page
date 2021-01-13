@@ -5,6 +5,39 @@
   margin: 0px;
 }
 
+@media (min-width: 600px) {
+  #bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
+    background-image: url(../pics/techno.jpg);
+    background-size: cover;
+    background-color: #f8872b;
+    opacity: 0.5;
+    background-blend-mode: soft-light;
+    z-index: -999;
+  }
+  /*
+    #bg2 {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 65%, 100% 35%, 100% 100%, 0% 100%);
+        background-image: url(../pics/techno.jpg);
+        background-size: cover;
+        background-color: #f8872b;
+        opacity: 0.5;
+        background-blend-mode: soft-light ;
+        z-index: -999;
+    } */
+}
+
+body {
+  background-color: rgba(255, 213, 149, 0.2);
+}
+
 @media (min-width: 200px) {
   main {
     position: absolute;
@@ -40,7 +73,8 @@ p, ul {
 }
 
 .code {
-  background-color: lightgray;
+  border: ridge black;
+  background-color: #fbfbfb;
   margin: 10px 18px 10px 0;
   padding: 10px;
 }
@@ -118,7 +152,9 @@ ul {
   }
   nav .navigation {
     width: 250px;
+    height: 80vh;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   nav .navigation ul {
     left: 0;
