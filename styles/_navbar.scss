@@ -3,6 +3,8 @@
 @media (max-width: 600px){
 
     nav {
+        position: fixed;
+        z-index: 999;
         background-color: rgb(230,230,230);
         header {
             display: flex;
