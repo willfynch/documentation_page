@@ -1,10 +1,30 @@
 
+@media (min-width: 600px){
 
+    nav {
+
+        background-color: rgb(230,230,230);
+
+
+        header {
+            text-align: center;
+            border: solid black;
+        }
+
+        .navigation {
+            border : solid blue;
+        }
+    }
+
+}
+
+
+/*
 @media (max-width: 600px){
 
     nav {
-        position: fixed;
-        z-index: 999;
+        
+        
         background-color: rgb(230,230,230);
         header {
             display: flex;
@@ -50,14 +70,13 @@
         height: 100vh;
         border-right: solid lightgrey 3px;
         background-color: rgb(230,230,230);  
-        position :fixed;
+        
         
         
         header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            display: relative;
+            left: 50%;
+            
         }
 
         .navigation {    
@@ -96,5 +115,5 @@
         }
     }
 }
-
+*/
 

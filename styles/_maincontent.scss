@@ -1,39 +1,77 @@
 
-body {
-    background-color: rgba(173, 201, 255, 0.2);
+// MAIN 
+
+main {
+
+// Background pic1
+
+@media (min-width: 600px) {
+
+    .bg {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../pics/techno.jpg);
+        background-size: cover;
+        background-color: #0143d1;
+        opacity: 0.5;
+        background-blend-mode: soft-light ;
+        z-index: -999;
+    }
+
+    #bg {
+        
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
+
+    }
+    
+    
 }
 
-@media (min-width: 200px){
-    main {
-        padding-left: 20px;
-    }
-}
+
+// Content
+
+@media (min-width: 200px){}
 
 @media (min-width: 600px){
-    main {
-        color: red;
-        position: absolute;
-        left: 270px;
-        padding-right: 40px;
-    }
+   
 }
+
+// Background pic2
+
+@media (min-width: 600px) {
+
+    #bg2 {
+
+        bottom: 0%;
+        clip-path: polygon(0 65%, 100% 35%, 100% 100%, 0% 100%); 
+       
+    }  
+}
+
+//END MAIN
+}
+// END MAIN
+
+
+
+
+
 
 h1 {
     margin: 20px 0 20px 0;
     font-size: 1.8rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 h2 {
     margin: 15px 0 15px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p, ul {
     margin: 10px 0 10px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -45,6 +83,33 @@ ul {
     background-color: rgb(251, 251, 251);
     margin: 10px 18px 10px 0;
     padding: 10px;
+    color: red;
 }
 
+@media (min-width: 600px) {
 
+    .bg {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../pics/techno.jpg);
+        background-size: cover;
+        background-color: #0143d1;
+        opacity: 0.5;
+        background-blend-mode: soft-light ;
+        z-index: -999;
+    }
+
+    #bg {
+        
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
+
+    }
+    
+    #bg2 {
+
+        bottom: 0%;
+        clip-path: polygon(0 65%, 100% 35%, 100% 100%, 0% 100%); 
+       
+    } 
+}
