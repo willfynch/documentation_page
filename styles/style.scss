@@ -1,48 +1,55 @@
-$navsize: 200px;
-
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
-// POSITIONS IN BODY
+// BODY
 
 body {
+
+    //position and size
+    overflow-x: hidden;
+
+    //styles
     background-color: rgba(173, 201, 255, 0.2);
     font-family: 'Segoe UI', sans-serif;
     
-    overflow-x: hidden;
     
 
-    nav {
-        border : solid red;
-        position: fixed;
-        width: $navsize;
-        height: 100vh;
+    h1 {
+        margin: 20px 0 20px 10px;
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        margin: 15px 0 15px 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 10px;
+        text-indent: 1rem;
+        text-align: justify;
+    }
+
+    ul {
+        margin: 10px 0 10px 0;
+        padding-left: 40px;
+    }
+    
+    .code {
+        border: ridge black;
+        background-color: rgb(251, 251, 251);
+        margin: 10px 18px 10px 10px;
+        padding: 10px;
        
     }
+    
+    @import "./navbar";
 
-    main {
-        display: block;
-        border: solid green;
-        position: relative;
-        width: 75%;
-        left: $navsize + 30px;
-
-        .bg {
-            position: absolute;
-            left: -40px;
-            z-index: -999;
-        }
-
-        section {
-            border: solid blue;
-            position: relative;
-           
-        }
-        
-    }
+    @import "./maincontent";
 }
 
 
@@ -52,7 +59,7 @@ body {
 
 
 
-@import "./maincontent";
-@import "./navbar";
+
+
 
 
