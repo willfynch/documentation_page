@@ -1,18 +1,67 @@
 // MAIN 
 main {
-        
+    
+    // CONTENT
+
     //position and size
     position: relative;
     @media (min-width: 600px){
         margin-left: $navsize + 30px;
     }
 
+    p {
+        margin: 10px 30px 10px 30px;
+        @media (min-width: 600px){
+            margin: 10px 40px 10px 10px;
+        }
+        text-indent: 1rem;
+        text-align: justify;
+    }
+
+    .code {
+        // style
+        border: groove black;
+        background-color: rgb(251, 251, 251);
+        margin: 10px 30px 10px 30px;
+        @media (min-width: 600px){
+            margin: 10px 40px 10px 10px;
+        }
+        padding: 20px;
+    }
+
+    
+    h1 {
+        //layout
+        margin: 10px 30px 10px 30px;
+        @media (min-width: 600px){
+            margin: 10px 40px 10px 10px;
+        }
+
+        //style
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        // layout
+        margin: 10px 30px 10px 30px;
+        @media (min-width: 600px){
+            margin: 10px 40px 10px 10px;
+        }
+
+        //style
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+
     //BLUE BACKGROUND SHAPES
 
+    // General Background Class
     .bg {
-        // position and size
+        // layout
         position: absolute;
 
+        // large screens
         @media (min-width: 600px){
             left: -40px;
         }
@@ -29,16 +78,18 @@ main {
 
     }
 
+    // Background Top
     #bg1 {
-        // position and size
+        // layout
         top: -20px;
 
         //style
         clip-path: polygon(0 0, 100% 0, 100% 51%, 0 100%);
     }
 
+    // Background Bottom
     #bg2 {
-        //position
+        //layout
         bottom: -20px;
 
         //style

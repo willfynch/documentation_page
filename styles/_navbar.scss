@@ -1,39 +1,54 @@
 $navsize: 200px;
 
+
+
+// ALL NAV 
+
 nav {
-
-    #topic {
-        text-align: center;
-        font-size: 2.8rem;
-        font-weight: 700;
-        margin: 20px 0 20px 0;
-        
-    }
-
-    //position and size
+    //layout
+    top: 0;
+    z-index: 999;
     //large screens
     @media (min-width: 600px){
         width: $navsize;
         height: 100%; 
         position: fixed;
     }
-
     // small screens
     @media (max-width: 600px){
         width: 100%;
         height: $navsize;
     }
 
-    top: 0;
-    z-index: 999;
-    
-    
-
     // style
     background-color: rgb(230,230,230);
 
-    #gohome {
-    //position and size
+
+
+    // HEADER OF NAVBAR
+
+    header {
+            
+        //style
+        text-align: center;
+
+        // TOPIC TITLE 
+
+        #topic {
+            //style
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+            padding: 20px 0 20px 0;
+        }
+    }
+
+    
+
+    // HOME BUTTON
+
+    #gohomebutton {
+    //layout
         // small screens
         @media (max-width: 600px){
             z-index: 999;
@@ -52,8 +67,9 @@ nav {
         background-color: rgb(0, 0, 194);
         border-radius: 10px;
         transition: all 0.1s ease-in-out;
+        cursor: pointer;
 
-        a {
+        .fa-home {
             text-decoration: none;
             color: white;
             font-size: 1.5rem;
@@ -66,163 +82,39 @@ nav {
         transition: all 0.1s ease-in-out;
     }
 
-    header {
-            //position
-            //small screens
-            @media (max-width: 600px){
-                
-            }
 
-            //styling
-            text-align: center;
-            
-    }
+    
+    // NAVIGATION LIST
 
     .navigation {
 
-            //position and size
-            //small screens
-            @media (max-width: 600px){
+        //layout
+        //small screens
+        @media (max-width: 600px){
                 height: 120px;
-            }
-            //large screens
-            @media (min-width: 600px){
+        }
+        //large screens
+        @media (min-width: 600px){
                 height: 80vh;
-            }
-            overflow-y: scroll;  
+        }
+        overflow-y: scroll;  
 
-
-            // style
-            ul {
-                
-                list-style-type: none;
-                padding-left: 0;
-                 
-                
-
-                li {
-                    border-top: solid black 1px;
-                    margin: 0;
-                    padding: 20px 0 20px 40px;
-
-                    a {                         
-                        color: black;
-                        text-decoration: none;
-                        font-size: 1rem;
-                    }
-                }
-
-                li:hover {
-                    background-color: white ;
-                }
-
-            }
+        // style
+        ul {
+            li {
+                border-top: solid black 1px;
+                padding: 20px 0 20px 40px;
             
-    }
-
-}
-
-
-
-
-
-
-
-/*
-@media (max-width: 600px){
-
-    nav {
-        
-        
-        background-color: rgb(230,230,230);
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .navigation {
-            height: 150px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-
-            ul {
-                left: 0;
-                list-style-type: none;
-                padding-left: 0;
-
-                li {
-                    width:100vw;
-                    border-top: solid black 1px;
-                    margin: 0;
-                    padding: 10px 0 10px 40px;
-
-                    a {                         
-                        color: black;
-                        text-decoration: none;
-                        font-size: 1rem;
-                    }
+                a {                         
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1rem;
                 }
+            }
 
-                li:hover {
+            li:hover {
                     background-color: white ;
-                }
-
             }
-        }
-    }
-    
-}
-
-@media (min-width: 600px){
-    nav {
-        height: 100vh;
-        border-right: solid lightgrey 3px;
-        background-color: rgb(230,230,230);  
-        
-        
-        
-        header {
-            display: relative;
-            left: 50%;
-            
-        }
-
-        .navigation {    
-            width: 250px;
-            height: 80vh;
-            overflow-y: scroll;
-            overflow-x: hidden;
-
-            ul {
-                left: 0;
-                list-style-type: none;
-                padding-left: 0;
-                
-
-                li {                    
-                    width:250px;
-                    border-top: solid black 1px;
-                    margin: 0;
-                    padding: 20px 0 20px 0;
-
-                    a {                         
-                        color: black;
-                        padding-left: 30px;
-                        text-decoration: none;
-                        font-size: 1.2rem;
-                    }
-
-                }
-
-                li:hover {
-                    background-color: white; 
-                }
-
-            }
-
-        }
+        }   
     }
 }
-*/
-
